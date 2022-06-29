@@ -2,10 +2,12 @@
   --color-text: #757575;
   --color-title: #212121;
   --color-accent: #2196f3;
+  --color-border: #afb1b8;
   --color-dark-background: #2f303a;
   --color-light-background: #f5f4fa;
   --color-button-background: #eeeeee;
   --color-white: #fff;
+  --color-footer-icon-background: #ffffff1a;
   --color-light-white: rgba(255, 255, 255, 0.6);
   --font-size-text: 14px;
   --font-size-title: 36px;
@@ -84,6 +86,7 @@ body {
 .navigation-contacts-mail,
 .navigation-contacts-tel {
   text-decoration: none;
+  margin-left: 10px;
 }
 .navigation-contacts-mail:hover,
 .navigation-contacts-mail:focus {
@@ -98,7 +101,8 @@ body {
 .main-solutions {
   width: 1600px;
   height: 600px;
-  background-color: var(--color-dark-background);
+  /* background-color: var(--color-dark-background); */
+  background-image: url(/images/shapka.jpg);
 }
 .solutions-block {
   padding-top: 200px;
@@ -185,7 +189,7 @@ body {
 /* Наша команда */
 .main-team {
   width: 1600px;
-  height: 648px;
+  height: 708px;
   margin-top: 90px;
   background-color: var(--color-light-background);
 }
@@ -201,6 +205,11 @@ body {
   display: flex;
   gap: 30px;
   margin: 50px 0 0 215px;
+}
+.team-card {
+  width: 270px;
+  height: 428px;
+  background-color: var(--color-light-white);
 }
 .team-list-title {
   color: var(--color-title);
@@ -218,12 +227,61 @@ body {
   text-align: center;
   margin-top: 10px;
 }
+.main-social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+  list-style: none;
+}
+.main-social img {
+  padding: 12px;
+}
+.main-social img:hover {
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+/* Постоянные клиенты */
+.main-client {
+  width: 1170px;
+  height: 184px;
+  margin-top: 100px;
+  margin-left: 215px;
+}
+.client-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--color-title);
+}
+.client-width {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-width:hover {
+  border: 1px solid var(--color-accent);
+}
+.client-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin-top: 50px;
+}
 /* Footer */
 .footer {
   width: 1600px;
   height: 252px;
+  margin-top: 88px;
   background-color: var(--color-dark-background);
   color: var(--color-white);
+  display: flex;
+  gap: 70px;
 }
 main {
   flex: 1 1 auto;
@@ -256,6 +314,34 @@ main {
 }
 .footer-list a:hover {
   color: var(--color-accent);
+}
+.footer-social {
+  padding: 60px;
+  font-weight: 700;
+  font-size: var(--color-text);
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-social-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--color-footer-icon-background);
+  background-color: var(--color-footer-icon-background);
+}
+.social-item:hover {
+  border: 1px solid var(--color-accent);
+  background-color: var(--color-accent);
 }
 /* Main portfolio */
 .contant {
