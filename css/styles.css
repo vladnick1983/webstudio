@@ -1,0 +1,319 @@
+:root {
+  --color-text: #757575;
+  --color-title: #212121;
+  --color-accent: #2196f3;
+  --color-dark-background: #2f303a;
+  --color-light-background: #f5f4fa;
+  --color-button-background: #eeeeee;
+  --color-white: #fff;
+  --color-light-white: rgba(255, 255, 255, 0.6);
+  --font-size-text: 14px;
+  --font-size-title: 36px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1600px;
+  height: 80px;
+  text-decoration: none;
+}
+.nav a {
+  color: var(--color-title);
+  font-weight: 500;
+}
+.navigation-logo {
+  text-decoration: none;
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.logo-color {
+  color: var(--color-accent);
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-left: 90px;
+  font-size: var(--font-size-text);
+}
+.navigation-item {
+  list-style: none;
+}
+.navigation-item a {
+  color: var(--color-title);
+}
+.navigation-link {
+  text-decoration: none;
+}
+
+.navigation-link:hover,
+.navigation-link:focus,
+.navigation-link:active,
+.active:visited {
+  color: var(--color-accent);
+}
+.navigation-contacts {
+  margin-left: 300px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: var(--font-size-text);
+  font-weight: 500;
+  line-height: 1.1;
+  list-style: none;
+}
+.navigation-contacts a {
+  color: var(--color-text);
+}
+.navigation-contacts-mail,
+.navigation-contacts-tel {
+  text-decoration: none;
+}
+.navigation-contacts-mail:hover,
+.navigation-contacts-mail:focus {
+  color: var(--color-accent);
+}
+.navigation-contacts-tel:hover,
+.navigation-contacts-tel:focus {
+  color: var(--color-accent);
+}
+/* Main */
+/* Решения */
+.main-solutions {
+  width: 1600px;
+  height: 600px;
+  background-color: var(--color-dark-background);
+}
+.solutions-block {
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-solutions-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  color: var(--color-white);
+}
+.main-solutions-button {
+  font-weight: 700;
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  margin-top: 30px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+/* Наши преимущества */
+.main-privilege {
+  width: 1170px;
+  height: auto;
+  margin: 90px 0 0 215px;
+  text-align: left;
+}
+.main-privilege-title {
+  display: none;
+}
+.privilege-list {
+  display: flex;
+  gap: 30px;
+}
+.privilege-item {
+  list-style: none;
+}
+.privilege-item-img {
+  width: 270px;
+  height: 120px;
+  background-color: var(--color-light-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.privilege-item-title {
+  font-size: var(--font-size-text);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-title);
+  margin-top: 30px;
+}
+.privilege-item-text {
+  margin-top: 10px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+/* Чем мы занимаемся */
+.main-lessons {
+  width: 1170px;
+  height: 386px;
+  margin: 90px 0 0 215px;
+}
+.lessons-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--color-title);
+}
+.lessons-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+/* Наша команда */
+.main-team {
+  width: 1600px;
+  height: 648px;
+  margin-top: 90px;
+  background-color: var(--color-light-background);
+}
+.team-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--color-title);
+  padding-top: 94px;
+}
+.team-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 50px 0 0 215px;
+}
+.team-list-title {
+  color: var(--color-title);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 30px;
+}
+.team-list-text {
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 10px;
+}
+/* Footer */
+.footer {
+  width: 1600px;
+  height: 252px;
+  background-color: var(--color-dark-background);
+  color: var(--color-white);
+}
+main {
+  flex: 1 1 auto;
+}
+.footer a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+.footer-content {
+  padding: 60px 0 0 215px;
+}
+.footer-logo {
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.footer-addres {
+  text-decoration: dashed;
+}
+.footer-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 20px;
+  font-style: normal;
+  list-style: none;
+}
+.footer-list a {
+  color: var(--color-light-white);
+}
+.footer-list a:hover {
+  color: var(--color-accent);
+}
+/* Main portfolio */
+.contant {
+  width: 1170px;
+
+  height: 1360px;
+  margin-left: 215px;
+}
+.contant-portfolio {
+  display: none;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+  margin-top: 100px;
+}
+.nav-item button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 6px 22px;
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--color-title);
+  background-color: var(--color-button-background);
+  border: 1px solid var(--color-button-background);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.nav-item button:hover,
+.nav-item button:focus {
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
+.contant-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 30px;
+  margin-top: 26px;
+}
+.contant-link {
+  text-decoration: none;
+}
+.contant-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--color-title);
+}
+.contant-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-text);
+}
