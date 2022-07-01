@@ -293,6 +293,7 @@ main {
   color: var(--color-white);
   text-decoration: none;
 }
+
 .footer-content {
   padding: 60px 0 0 215px;
 }
@@ -312,7 +313,8 @@ main {
   font-style: normal;
   list-style: none;
 }
-.footer-list a {
+ .footer-list-email a,
+ .footer-list-tel a{
   color: var(--color-light-white);
 }
 .footer-list a:hover {
