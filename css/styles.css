@@ -7,6 +7,7 @@
   --color-light-background: #f5f4fa;
   --color-button-background: #eeeeee;
   --color-white: #fff;
+  --collor-border:#ECECEC;
   --color-footer-icon-background: #ffffff1a;
   --color-light-white: rgba(255, 255, 255, 0.6);
   --font-size-text: 14px;
@@ -29,6 +30,7 @@ body {
   width: 1600px;
   height: 80px;
   text-decoration: none;
+  border-bottom: 1px solid var(--collor-border);
 }
 .nav a {
   color: var(--color-title);
@@ -138,7 +140,7 @@ body {
   text-align: left;
 }
 .main-privilege-title {
-  display: none;
+  visibility: hidden;
 }
 .privilege-list {
   display: flex;
@@ -356,7 +358,7 @@ main {
   margin-left: 215px;
 }
 .contant-portfolio {
-  display: none;
+  visibility: hidden;
 }
 .nav-list {
   display: flex;
