@@ -6,8 +6,9 @@
   --color-dark-background: #2f303a;
   --color-light-background: #f5f4fa;
   --color-button-background: #eeeeee;
+  --color-button-background-focus: #188ce8;
   --color-white: #fff;
-  --collor-border:#ECECEC;
+  --collor-border: #ececec;
   --color-footer-icon-background: #ffffff1a;
   --color-light-white: rgba(255, 255, 255, 0.6);
   --font-size-text: 14px;
@@ -58,19 +59,48 @@ body {
 }
 .navigation-item {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  
 }
 .navigation-item a {
   color: var(--color-title);
 }
 .navigation-link {
   text-decoration: none;
+  position: relative;
+  /* padding:   29px 0 ; */
+  
 }
 
 .navigation-link:hover,
 .navigation-link:focus,
 .navigation-link:active,
-.active:visited {
+.navigation-item .active,
+.navigation-contacts-mail:hover,
+.navigation-contacts-mail:focus,
+.navigation-contacts-tel:hover,
+.navigation-contacts-tel:focus {
   color: var(--color-accent);
+}
+.active-link {
+  width: 48px;
+  height: 4px;
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: 2px;
+  position: absolute;
+  top: 75px;
+  /* margin-bottom: auto 0; */
+}
+.portfolio-active-link{
+  width: 74px;
+  height: 4px;
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: 2px;
+  position: absolute;
+  top: 75px;
 }
 .navigation-contacts {
   margin-left: 300px;
@@ -89,14 +119,6 @@ body {
 .navigation-contacts-tel {
   text-decoration: none;
   margin-left: 10px;
-}
-.navigation-contacts-mail:hover,
-.navigation-contacts-mail:focus {
-  color: var(--color-accent);
-}
-.navigation-contacts-tel:hover,
-.navigation-contacts-tel:focus {
-  color: var(--color-accent);
 }
 /* Main */
 /* Решения */
@@ -131,6 +153,10 @@ body {
   margin-top: 30px;
   color: var(--color-white);
   cursor: pointer;
+}
+.main-solutions-button:hover,
+.main-solutions-button:focus {
+  background: var(--color-button-background-focus);
 }
 /* Наши преимущества */
 .main-privilege {
@@ -187,6 +213,29 @@ body {
   display: flex;
   gap: 30px;
   margin-top: 50px;
+}
+.lessons-item{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+  }
+.lessons-ladel{
+position: absolute;
+bottom: 0;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 370px;
+height: 70px;
+background-color: rgba(47, 48, 58, 0.8);
+color: var(--color-white);
+text-transform: uppercase;
+font-size: 14px;
+font-weight: 700;
+line-height: 1.1;
+letter-spacing: 0.03em;
 }
 /* Наша команда */
 .main-team {
@@ -315,8 +364,8 @@ main {
   font-style: normal;
   list-style: none;
 }
- .footer-list-email a,
- .footer-list-tel a{
+.footer-list-email a,
+.footer-list-tel a {
   color: var(--color-light-white);
 }
 .footer-list a:hover {
@@ -353,7 +402,6 @@ main {
 /* Main portfolio */
 .contant {
   width: 1170px;
-
   height: 1360px;
   margin-left: 215px;
 }
@@ -385,6 +433,8 @@ main {
 .nav-item button:focus {
   color: var(--color-white);
   background-color: var(--color-accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .contant-list {
   display: flex;
