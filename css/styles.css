@@ -61,7 +61,6 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  
 }
 .navigation-item a {
   color: var(--color-title);
@@ -70,7 +69,6 @@ body {
   text-decoration: none;
   position: relative;
   /* padding:   29px 0 ; */
-  
 }
 
 .navigation-link:hover,
@@ -93,7 +91,7 @@ body {
   top: 75px;
   /* margin-bottom: auto 0; */
 }
-.portfolio-active-link{
+.portfolio-active-link {
   width: 74px;
   height: 4px;
   background-color: var(--color-accent);
@@ -214,28 +212,27 @@ body {
   gap: 30px;
   margin-top: 50px;
 }
-.lessons-item{
+.lessons-item {
   position: relative;
   display: flex;
   justify-content: center;
-  
-  }
-.lessons-ladel{
-position: absolute;
-bottom: 0;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 370px;
-height: 70px;
-background-color: rgba(47, 48, 58, 0.8);
-color: var(--color-white);
-text-transform: uppercase;
-font-size: 14px;
-font-weight: 700;
-line-height: 1.1;
-letter-spacing: 0.03em;
+}
+.lessons-ladel {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
 }
 /* Наша команда */
 .main-team {
@@ -372,7 +369,7 @@ main {
   color: var(--color-accent);
 }
 .footer-social {
-  padding: 60px;
+  padding-top: 60px;
   font-weight: 700;
   font-size: var(--color-text);
   line-height: 1.1;
@@ -399,6 +396,30 @@ main {
   border: 1px solid var(--color-accent);
   background-color: var(--color-accent);
 }
+.footer-email {
+  padding: 60px 0 0 23px;
+  font-weight: 700;
+  font-size: var(--color-text);
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.email {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 295px 15px 16px;
+  margin-top: 20px;
+}
+.email-button {
+  background-color: var(--color-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 15px 28px 15px 29px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
 /* Main portfolio */
 .contant {
   width: 1170px;
@@ -459,4 +480,113 @@ main {
   font-size: 16px;
   line-height: 1.8;
   color: var(--color-text);
+}
+/* Popup */
+.popup {
+  position: fixed;
+  top: 221px;
+  left: 536px;
+  width: 528px;
+  height: 581px;
+  background: var(--color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+}
+.popup-body {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding: 30px;
+}
+.popup-content {
+  background-color: var(--color-white);
+  max-width: 528px;
+}
+.popup-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  text-decoration: none;
+  color: var(--color-title);
+}
+.popup-title {
+  color: var(--color-title);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  max-width: 528px;
+  text-align: center;
+}
+.popup-form {
+  margin-top: 12px;
+}
+.input-block {
+  display: flex;
+  flex-direction: column;
+}
+.label-form-name,
+.label-form-tel,
+.label-form-mail,
+.label-koment {
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+}
+.form-name,
+.form-tel,
+.form-mail,
+.koment-text {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin: 4px 0 10px 0;
+}
+.koment-block {
+  display: flex;
+  flex-direction: column;
+}
+.koment-text {
+  color: rgba(117, 117, 117, 0.5);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  padding: 12px 1 12px 16px;
+  min-height: 120px;
+}
+.chek-block {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+  color: var(--color-text);
+}
+.chek-block a {
+  color: var(--color-accent);
+}
+.button-block {
+  display: flex;
+  justify-content: center;
+}
+.form-button {
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  color: var(--color-white);
+  cursor: pointer;
+  margin: 30px 0 40px 0;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.form-button:hover,
+.form-button:focus {
+  background: var(--color-button-background-focus);
 }
