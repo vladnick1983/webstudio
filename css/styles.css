@@ -381,7 +381,7 @@ main {
 .footer-social {
   padding-top: 60px;
   font-weight: 700;
-  font-size: var(--color-text);
+  font-size: var(--font-size-text);
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -409,7 +409,7 @@ main {
 .footer-email {
   padding: 60px 0 0 23px;
   font-weight: 700;
-  font-size: var(--color-text);
+  font-size: var(--font-size-text);
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -491,6 +491,18 @@ main {
   line-height: 1.8;
   color: var(--color-text);
 }
+/* .contact-hover{
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+  overflow: hidden;
+} */
+/* .contant-item {
+  background-color: rgba(33, 150, 243, 0.9);
+  z-index: 2;
+} */
+
 /* Popup */
 .popup {
   position: fixed;
@@ -627,4 +639,147 @@ main {
 .form-button:hover,
 .form-button:focus {
   background: var(--color-button-background-focus);
+}
+@media (max-width: 768px){
+  .nav{
+   max-width: 768px; 
+     }
+   .navigation {
+    margin: 26px 5px 26px 15px;
+  }
+  .main-solutions{
+    width: 768px;
+    height: 400px;
+    background-size: contain;
+  }
+  .navigation-contacts{
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+  .navigation-contacts-mail
+{
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.navigation-contacts-tel{
+  margin-left: 16px;
+  margin-right: 5px;
+}
+.main-solutions-title{
+  font-size: 26px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+}
+.solutions-block{
+  padding-top: 118px;
+}
+.main-privilege {
+  margin: 0 0 0 15px;
+}
+
+.privilege-item-img{
+  width: 354px;
+  height: 251px;
+}
+.privilege-list{
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 738px;
+
+}
+.privilege-item-text{
+  width: 354px;
+ 
+}
+.main-lessons{
+  width: 768px;
+  height: auto;
+  margin: 60px 0 0 15px;
+}
+.lessons-title,
+.team-title,
+.client-title{
+  font-size: 28px;
+}
+.lessons-list{
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 738px;
+  margin-top: 30px;
+}
+.lessons-item{
+  width: 354px;
+}
+.main-team{
+  width: 768px;
+  height: auto;
+  margin-top: 60px;
+}
+.team-title{
+  padding-top: 60px;
+}
+.team-list{
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin: 30px 0 0 15px;
+}
+.team-card {
+  width: 354px;
+  height: 536px;
+}
+.team-card>img{
+  width: 354px;
+  height: 374px;
+}
+.main-client{
+  width: 738px;
+  height: auto;
+  margin: 60px 0 0 15px;
+}
+.client-width{
+  width: 226px;
+}
+.client-list{
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-top: 30px;
+  gap: 25px;
+}
+.footer{
+  width: 768px;
+  height: auto;
+  margin-top: 60px;
+   flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.footer-content{
+  padding: 60px 10px 0 65px;
+}
+.footer-social {
+  margin-right: 65px;
+
+}
+.footer-email{
+  padding: 10px 0;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.popup-content{
+  top: 178px;
+  left: 148px;
+  max-width: 450px;
+  
+}
+.chek-block{
+  font-size: var(--font-size-text);
+}
 }
