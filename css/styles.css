@@ -677,6 +677,7 @@ main {
 }
 .main-privilege {
   margin: 0 0 0 15px;
+  width: 768px;
 }
 
 .privilege-item-img{
@@ -765,21 +766,36 @@ main {
 }
 .footer-social {
   margin-right: 65px;
-
 }
 .footer-email{
   padding: 10px 0;
   margin: 0 auto;
   text-align: center;
-  
 }
 .popup-content{
   top: 178px;
   left: 148px;
-  max-width: 450px;
+  /* max-width: 450px; */
   
 }
 .chek-block{
   font-size: var(--font-size-text);
+}
+.contant{
+  width: 768px;
+  height: auto;
+  margin-left: 5px;
+}
+.nav-list{
+  margin-top: 60px;
+  
+}
+.contant-item{
+width: 354px;
+height: auto;
+
+}
+.contant-list{
+ 
 }
 }
